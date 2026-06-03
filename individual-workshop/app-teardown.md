@@ -12,8 +12,13 @@
 ## Nội dung bài làm (Ảnh chụp chi tiết)
 
 ### Phần 1: Promise and Reality & Query đã thử
-
 ![Bản thảo 1](../assets/1.jpg)
+
+**Minh chứng thực tế trên V-AI:**
+- **Ảnh a (Kết quả Query 1):**
+  ![Ảnh a](../assets/a.jpg)
+- **Ảnh b (Kết quả Query 2):**
+  ![Ảnh b](../assets/b.jpg)
 
 ### Phần 2: Observation & Phân tích 4 Paths
 
