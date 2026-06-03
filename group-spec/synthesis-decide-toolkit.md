@@ -1,37 +1,44 @@
+# synthesis-decide-toolkit.md
+
 # Synthesis & Decide Toolkit
 
 ## 1. Gom Evidence Thành Cụm
 
 ### Cụm Pain
 
-**Decision Support**
+Decision Support trước khi đặt phòng.
 
-Các biểu hiện:
+Biểu hiện:
 
-- Không biết chọn khách sạn nào.
-- Không biết phòng nào phù hợp.
-- Không biết giá nào hợp lý.
-- Có quá nhiều lựa chọn.
+* Không biết chọn khách sạn nào
+* Không biết chọn loại phòng nào
+* Không biết tiện ích có phù hợp không
+* Có quá nhiều lựa chọn
 
 ---
 
 ## 2. Insight
 
-Khách du lịch tự túc lần đầu đến một địa điểm mới không chỉ cần danh sách khách sạn.
+Khách du lịch tự túc không chỉ cần thông tin khách sạn.
 
-Họ cần được hỗ trợ ra quyết định phù hợp với nhu cầu cá nhân.
+Họ cần một trợ lý hội thoại có thể:
 
-Vì có quá nhiều lựa chọn nhưng không biết lựa chọn nào là tốt nhất cho mình.
+* Hiểu nhu cầu
+* Đặt câu hỏi phù hợp
+* Giải thích các lựa chọn
+* Hỗ trợ ra quyết định
 
 ---
 
 ## 3. Opportunity
 
-Cơ hội là dùng AI để **augment** quá trình lựa chọn nơi lưu trú,
+Dùng AI Travel Concierge Bot để:
 
-giúp người dùng tìm được khách sạn phù hợp nhanh hơn,
-
-trong khi vẫn giữ quyền quyết định cuối cùng cho người dùng.
+* Thu thập nhu cầu
+* Hỏi lại khi thiếu thông tin
+* Gợi ý khách sạn phù hợp
+* Gợi ý loại phòng phù hợp
+* Hiển thị tiện ích nổi bật
 
 ---
 
@@ -43,19 +50,19 @@ Khách du lịch tự túc.
 
 ### Task
 
-Chọn khách sạn phù hợp.
+Tìm hiểu nơi lưu trú trước khi đặt phòng.
+
+### AI Bot
+
+AI Travel Concierge Bot.
 
 ### AI Decision
 
-Đề xuất khách sạn nào phù hợp nhất.
+Khách sạn và loại phòng nào phù hợp nhất với nhu cầu hiện tại.
 
 ### Failure Path
 
-Thiếu thông tin hoặc đề xuất sai nhu cầu.
-
-### Evidence
-
-Observation từ trải nghiệm du lịch thực tế.
+User cung cấp thiếu thông tin nhưng bot vẫn cố gợi ý.
 
 ---
 
@@ -75,11 +82,9 @@ Có.
 
 ### Quyết định cuối
 
-Giữ hướng hiện tại.
+Build:
 
-**Build Slice:**
-
-> AI Hotel Matcher
+> AI Travel Concierge Bot
 
 ---
 
@@ -87,17 +92,17 @@ Giữ hướng hiện tại.
 
 Dựa trên evidence,
 
-nhóm sẽ build một prototype **AI Hotel Matcher**,
+nhóm sẽ build một prototype AI Travel Concierge Bot,
 
-cho **khách du lịch tự túc**,
+cho khách du lịch tự túc lần đầu đến địa điểm mới,
 
-để giải quyết vấn đề **lựa chọn nơi lưu trú phù hợp**,
+để giải quyết pain trong việc tìm hiểu nơi lưu trú,
 
-bằng cách AI **augment quá trình ra quyết định**,
+bằng cách AI augment quá trình ra quyết định,
 
-và sẽ kiểm thử failure path:
+và sẽ test failure path:
 
-> "Người dùng cung cấp thiếu thông tin nhưng AI vẫn cố gắng đề xuất khách sạn."
+> User cung cấp thiếu thông tin nhưng bot vẫn cố gợi ý khách sạn.
 
 ---
 
@@ -105,9 +110,11 @@ và sẽ kiểm thử failure path:
 
 Không build trong Day 06:
 
-- Đặt phòng trực tiếp.
-- Thanh toán.
-- Đổi / hủy phòng.
-- Lập lịch trình toàn chuyến đi.
-- Hỗ trợ vé vui chơi.
-- Multi-agent concierge.
+* Đặt phòng
+* Thanh toán
+* Đổi / hủy phòng
+* Lịch trình toàn chuyến đi
+* Vé vui chơi
+* Multi-agent concierge
+* Giá realtime
+* Tích hợp bản đồ
